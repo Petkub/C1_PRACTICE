@@ -1,0 +1,152 @@
+[
+ {
+  "set": 1,
+  "level_th": "เงื่อนไขและการคำนวณ",
+  "level_en": "Conditions and Arithmetic",
+  "problems": [
+   101,
+   102,
+   103,
+   104,
+   105,
+   106,
+   107,
+   108
+  ]
+ },
+ {
+  "set": 2,
+  "level_th": "loop และรูปแบบ",
+  "level_en": "Loops and Patterns",
+  "problems": [
+   201,
+   202,
+   203,
+   204,
+   205,
+   206,
+   207,
+   208
+  ]
+ },
+ {
+  "set": 3,
+  "level_th": "จำนวนเฉพาะและตัวหาร",
+  "level_en": "Primes and Divisors",
+  "problems": [
+   301,
+   302,
+   303,
+   304,
+   305,
+   306,
+   307,
+   308
+  ]
+ },
+ {
+  "set": 4,
+  "level_th": "เลขโดดและเลขฐาน",
+  "level_en": "Digits and Number Bases",
+  "problems": [
+   401,
+   402,
+   403,
+   404,
+   405,
+   406,
+   407,
+   408
+  ]
+ },
+ {
+  "set": 5,
+  "level_th": "array หนึ่งมิติ",
+  "level_en": "One-Dimensional Arrays",
+  "problems": [
+   501,
+   502,
+   503,
+   504,
+   505,
+   506,
+   507,
+   508
+  ]
+ },
+ {
+  "set": 6,
+  "level_th": "array สองมิติและตาราง",
+  "level_en": "Grids and 2D Arrays",
+  "problems": [
+   601,
+   602,
+   603,
+   604,
+   605,
+   606,
+   607,
+   608
+  ]
+ },
+ {
+  "set": 7,
+  "level_th": "string",
+  "level_en": "Strings",
+  "problems": [
+   701,
+   702,
+   703,
+   704,
+   705,
+   706,
+   707,
+   708
+  ]
+ },
+ {
+  "set": 8,
+  "level_th": "simulation และปฏิทิน",
+  "level_en": "Simulation and Calendars",
+  "problems": [
+   801,
+   802,
+   803,
+   804,
+   805,
+   806,
+   807,
+   808
+  ]
+ },
+ {
+  "set": 9,
+  "level_th": "set, matrix และตรรกศาสตร์",
+  "level_en": "Sets, Matrices and Logic",
+  "problems": [
+   901,
+   902,
+   903,
+   904,
+   905,
+   906,
+   907,
+   908
+  ]
+ },
+ {
+  "set": 10,
+  "level_th": "ความสัมพันธ์เวียนเกิดและการนับ",
+  "level_en": "Recurrences and Counting",
+  "problems": [
+   1001,
+   1002,
+   1003,
+   1004,
+   1005,
+   1006,
+   1007,
+   1008
+  ]
+ }
+]

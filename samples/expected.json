@@ -1,0 +1,36 @@
+{
+ "batch/primes_ok.cpp": {
+  "problem": "3-1",
+  "verdict": "AC",
+  "score": 100
+ },
+ "batch/primes_offbyone.cpp": {
+  "problem": "3-1",
+  "verdict": "WA"
+ },
+ "batch/primes_loop.cpp": {
+  "problem": "3-1",
+  "verdict": "TLE"
+ },
+ "batch/primes_crash.cpp": {
+  "problem": "3-1",
+  "verdict": "RE"
+ },
+ "batch/primes_syntax.cpp": {
+  "problem": "3-1",
+  "verdict": "CE"
+ },
+ "batch/primes_mle.cpp": {
+  "problem": "3-1",
+  "verdict": "MLE"
+ },
+ "batch/primes_throw.cpp": {
+  "problem": "3-1",
+  "verdict": "RE"
+ },
+ "batch/primes_warn.cpp": {
+  "problem": "3-1",
+  "verdict": "AC",
+  "score": 100
+ }
+}

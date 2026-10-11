@@ -1,0 +1,4 @@
+POSN Practice Judge - changes
+
+1.0  C1 Practice: 10 topics x 8 problems. Same judge as the Camp 1 mock exams; big tests are built on your
+     computer the first time a problem is judged (small download).

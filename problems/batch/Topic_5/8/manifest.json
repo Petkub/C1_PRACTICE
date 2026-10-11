@@ -1,0 +1,131 @@
+{
+ "version": 1,
+ "tests": [
+  {
+   "name": "01",
+   "in": "125f0e7cba8f2a913191e8b239644ab5d5c6ce04eaaa88cbfda84327cbe5f974",
+   "out": "60052058137f493fdcf5478c0cb2c5b9d6537a4cb99c1d7c6c15a1db6e4a04ca",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "02",
+   "in": "4e25b3aec8d6b106937e6615d848149a713211d5186c17f8aa63a2da0586a067",
+   "out": "5cc3a6551605a0b4e9c3334f5eb5554c404973daf0b1a58655fa29c0ba3d47b0",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "03",
+   "in": "e1db73faefe20f6e7428e24bffe3c86358557b0d1ea74f8f5cf91eec019a141f",
+   "out": "803afb77488ac7743d842e46d3174d55920227fdbb67516fdeb0b81e8ce39858",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "04",
+   "in": "51d5e7e98cc8de205f3e6691626884b79e5c8865e7ae1689c66303df69966f2b",
+   "out": "8847ccf9793caf1bf27c8069e90dc6c6f1b505284f04e569a73ebb56106dc5bd",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "05",
+   "in": "f6a3c0f4462a9bd2f658d27f14d30700cd7998d0e047fd3ee09d312ba877732a",
+   "out": "313755c04f01a04c2a1fe574a99ce74269736b41f11d9fa3e2ce3823194655f9",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "06",
+   "in": "15ce867237a31cfc78f0191d422ed8ecf176f0937e19561a16364016d7ce84f0",
+   "out": "020a7c91e30725bb191818987340dec6040aff93923840de685e1e1d7b3d071a",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "07",
+   "in": "af1e3b3d0781c115360fb0052f7a8ae024c61d7001fe2c15fa8e7396bacc5fcc",
+   "out": "5cc3a6551605a0b4e9c3334f5eb5554c404973daf0b1a58655fa29c0ba3d47b0",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "08",
+   "in": "d1d2cb0cea709f75ec0af5c6ae706e9fab8dfd6c661e0cae8523a3af636046be",
+   "out": "d4fa5c864cb2837f1ed4cf1f2c552cde9d5f5e5143a808ca328263fb0b2f3e02",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "09",
+   "in": "ca1f29e1238443287f614f6d3fddcf1009294f45869a6265e1ff9ac244ef8d0a",
+   "out": "d4fa5c864cb2837f1ed4cf1f2c552cde9d5f5e5143a808ca328263fb0b2f3e02",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "10",
+   "in": "79f8546c4a4fdffa0fd9ddeb1764d99f9266dd1de400ce041da7bb5b1a35720b",
+   "out": "3a668857a2240056372697d8f78176d114ad64d51a62afc7e351574f7a8ab1cd",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "11",
+   "in": "cd1800c529a303859a78e65ce69ec61035854280074b591d29a5dbc3c26c809d",
+   "out": "2b971c3fe155f85b0ab0c70730ea039115a05cfcd68b91c9d29bb5dad9ab0d8d",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "12",
+   "in": "f9c78cf4efcdac6280f821a33758b978c660c420a448266566dc06e0c6caf2f1",
+   "out": "bc811a618b1b03c254f074afbccd17c0d81d4f5cf965e79a4d7fb2d80df711ef",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "13",
+   "in": "d6a1e9cb109a2b1169e0843e4ae563d966f69774f423084e6fc6f960b9086757",
+   "out": "ec1a75cb3995a6e6c43b65dff7b33a2fe13637050cd4ee835219a5b3f5a7cf21",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "14",
+   "in": "9af50618e9342f20e8c59b94bfe2fdb366011518fd37f4d2c2d058c5aeadf5a0",
+   "out": "cad30e37f24172f268bfcf52431711d57b304e3d7c99a8b1359257c616790360",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "15",
+   "in": "c818c515cc72eac8565804dd1dcb94b21b595eba00961e1b970426c0374ed40b",
+   "out": "773229fac314d29c7c0a6eac0f80fc7a4620287f5d3ec9771ce4135733a938f9",
+   "in_file": false,
+   "out_file": true
+  },
+  {
+   "name": "16",
+   "in": "9adf8a2e15cbb279edafc61f9725c61c22cf70345c116290cd73e56d3f79deb1",
+   "out": "bd3a0c0ea3738c3f7d6f95256b1f786233d9e2fa1ff715dab9eefdf8ef894cfb",
+   "in_file": false,
+   "out_file": true
+  },
+  {
+   "name": "17",
+   "in": "2af9fb10b025c6b36fd52403d8baab8acd62f3169476401f8e435493dc1d16e9",
+   "out": "e604d436a3d9daf2968616ee1cf9bc45b8460a7379ce73fde6ead8d4933fe1ea",
+   "in_file": false,
+   "out_file": true
+  },
+  {
+   "name": "18",
+   "in": "3561ac766957c38b3538c037e42e6c0568995ea837b5ebd7ae41a5389dfa90a6",
+   "out": "e7b787f3430db76cf83f4b09366d0725e82ed5acf002c3f2e9a577a0e90ba9c1",
+   "in_file": false,
+   "out_file": true
+  }
+ ]
+}

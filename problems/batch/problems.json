@@ -1,0 +1,562 @@
+{
+ "101": {
+  "title": "ซื้อไข่ไก่",
+  "en": "Buying Eggs",
+  "tier": 1,
+  "dir": "Topic_1/1",
+  "samples": 5
+ },
+ "102": {
+  "title": "นาฬิกาต่างดาว",
+  "en": "Alien Clock",
+  "tier": 1,
+  "dir": "Topic_1/2",
+  "samples": 5
+ },
+ "103": {
+  "title": "ค่าส่งพัสดุ",
+  "en": "Parcel Postage",
+  "tier": 1,
+  "dir": "Topic_1/3",
+  "samples": 5
+ },
+ "104": {
+  "title": "ไฟกะพริบ",
+  "en": "Blinking Light",
+  "tier": 2,
+  "dir": "Topic_1/4",
+  "samples": 5
+ },
+ "105": {
+  "title": "กบกระโดดไปกลับ",
+  "en": "Back-and-Forth Frog",
+  "tier": 2,
+  "dir": "Topic_1/5",
+  "samples": 5
+ },
+ "106": {
+  "title": "เดินอ้อมตึก",
+  "en": "Around the Building",
+  "tier": 2,
+  "dir": "Topic_1/6",
+  "samples": 5
+ },
+ "107": {
+  "title": "แจกลูกอมเป็นวง",
+  "en": "Candy Rounds",
+  "tier": 3,
+  "dir": "Topic_1/7",
+  "samples": 5
+ },
+ "108": {
+  "title": "ม้าหมากรุกบนกระดานไม่สิ้นสุด",
+  "en": "Knight on an Endless Board",
+  "tier": 3,
+  "dir": "Topic_1/8",
+  "samples": 5
+ },
+ "201": {
+  "title": "ดาวกระจาย",
+  "en": "Starburst",
+  "tier": 1,
+  "dir": "Topic_2/1",
+  "samples": 5
+ },
+ "202": {
+  "title": "หน้าต่างบานกระจก",
+  "en": "Window Panes",
+  "tier": 1,
+  "dir": "Topic_2/2",
+  "samples": 5
+ },
+ "203": {
+  "title": "ผ่อนหนี้",
+  "en": "Paying Off a Loan",
+  "tier": 1,
+  "dir": "Topic_2/3",
+  "samples": 6
+ },
+ "204": {
+  "title": "ป้ายตัวเลขเจ็ดส่วน",
+  "en": "Seven-Segment Sign",
+  "tier": 2,
+  "dir": "Topic_2/4",
+  "samples": 5
+ },
+ "205": {
+  "title": "ตารางสูตรคูณยักษ์",
+  "en": "Giant Multiplication Table",
+  "tier": 2,
+  "dir": "Topic_2/5",
+  "samples": 5
+ },
+ "206": {
+  "title": "ตัดกระดาษเป็นจัตุรัส",
+  "en": "Cutting Squares",
+  "tier": 2,
+  "dir": "Topic_2/6",
+  "samples": 5
+ },
+ "207": {
+  "title": "อนุกรมสลับเครื่องหมายเป็นช่วง",
+  "en": "Block-Alternating Series",
+  "tier": 3,
+  "dir": "Topic_2/7",
+  "samples": 5
+ },
+ "208": {
+  "title": "งูขดในตาราง",
+  "en": "Coiled Snake",
+  "tier": 3,
+  "dir": "Topic_2/8",
+  "samples": 5
+ },
+ "301": {
+  "title": "จำนวนเฉพาะในช่วง",
+  "en": "Primes in a Range",
+  "tier": 1,
+  "dir": "Topic_3/1",
+  "samples": 6
+ },
+ "302": {
+  "title": "แบ่งผลไม้ใส่ถุง",
+  "en": "Fruit Bags",
+  "tier": 1,
+  "dir": "Topic_3/2",
+  "samples": 5
+ },
+ "303": {
+  "title": "แปลงผักสี่เหลี่ยม",
+  "en": "Rectangular Plots",
+  "tier": 1,
+  "dir": "Topic_3/3",
+  "samples": 6
+ },
+ "304": {
+  "title": "ผลบวกของจำนวนเฉพาะสองตัว",
+  "en": "Sum of Two Primes",
+  "tier": 2,
+  "dir": "Topic_3/4",
+  "samples": 6
+ },
+ "305": {
+  "title": "ไฟกะพริบสามดวง",
+  "en": "Three Blinking Lights",
+  "tier": 2,
+  "dir": "Topic_3/5",
+  "samples": 6
+ },
+ "306": {
+  "title": "เศษส่วนอย่างต่ำ",
+  "en": "Reduced Fractions",
+  "tier": 3,
+  "dir": "Topic_3/6",
+  "samples": 5
+ },
+ "307": {
+  "title": "จำนวนที่มีตัวหาร K ตัว",
+  "en": "Exactly K Divisors",
+  "tier": 3,
+  "dir": "Topic_3/7",
+  "samples": 6
+ },
+ "308": {
+  "title": "ผลรวมจำนวนตัวหาร",
+  "en": "Total Number of Divisors",
+  "tier": 3,
+  "dir": "Topic_3/8",
+  "samples": 6
+ },
+ "401": {
+  "title": "จำนวน Harshad ถัดไป",
+  "en": "Next Harshad Number",
+  "tier": 1,
+  "dir": "Topic_4/1",
+  "samples": 6
+ },
+ "402": {
+  "title": "ระยะ Hamming",
+  "en": "Hamming Distance",
+  "tier": 1,
+  "dir": "Topic_4/2",
+  "samples": 6
+ },
+ "403": {
+  "title": "ฐานที่เป็น palindrome",
+  "en": "Palindromic Bases",
+  "tier": 1,
+  "dir": "Topic_4/3",
+  "samples": 6
+ },
+ "404": {
+  "title": "เลขชุดเดิมที่ถัดไป",
+  "en": "Next Number with the Same Digits",
+  "tier": 2,
+  "dir": "Topic_4/4",
+  "samples": 6
+ },
+ "405": {
+  "title": "รหัสพัสดุพิมพ์สลับ",
+  "en": "Swapped Parcel Code",
+  "tier": 2,
+  "dir": "Topic_4/5",
+  "samples": 6
+ },
+ "406": {
+  "title": "รหัส Gray",
+  "en": "Gray Code",
+  "tier": 2,
+  "dir": "Topic_4/6",
+  "samples": 5
+ },
+ "407": {
+  "title": "หลักที่ K ของสายเลขฐาน",
+  "en": "K-th Symbol of the Counting String",
+  "tier": 3,
+  "dir": "Topic_4/7",
+  "samples": 5
+ },
+ "408": {
+  "title": "สุ่มเลขแบบยกกำลังสองตรงกลาง",
+  "en": "Middle-Square Generator",
+  "tier": 3,
+  "dir": "Topic_4/8",
+  "samples": 6
+ },
+ "501": {
+  "title": "จับคู่รองเท้า",
+  "en": "Shoe Pairs",
+  "tier": 1,
+  "dir": "Topic_5/1",
+  "samples": 5
+ },
+ "502": {
+  "title": "ช่วงเลขคณิตที่ยาวที่สุด",
+  "en": "Longest Arithmetic Segment",
+  "tier": 1,
+  "dir": "Topic_5/2",
+  "samples": 6
+ },
+ "503": {
+  "title": "หมุน array",
+  "en": "Rotating an Array",
+  "tier": 1,
+  "dir": "Topic_5/3",
+  "samples": 5
+ },
+ "504": {
+  "title": "เดินขึ้นเขา",
+  "en": "Hiking Ascent",
+  "tier": 2,
+  "dir": "Topic_5/4",
+  "samples": 5
+ },
+ "505": {
+  "title": "จุดแบ่ง",
+  "en": "Dividing Points",
+  "tier": 2,
+  "dir": "Topic_5/5",
+  "samples": 6
+ },
+ "506": {
+  "title": "playlist ไม่ซ้ำ",
+  "en": "Varied Playlist",
+  "tier": 2,
+  "dir": "Topic_5/6",
+  "samples": 5
+ },
+ "507": {
+  "title": "จัดหนังสือบนชั้น",
+  "en": "Shelving Books",
+  "tier": 3,
+  "dir": "Topic_5/7",
+  "samples": 6
+ },
+ "508": {
+  "title": "ช่างทาสีรั้ว",
+  "en": "Fence Painters",
+  "tier": 3,
+  "dir": "Topic_5/8",
+  "samples": 5
+ },
+ "601": {
+  "title": "robot ดูดฝุ่นแนวกากบาท",
+  "en": "Cross Cleaner",
+  "tier": 1,
+  "dir": "Topic_6/1",
+  "samples": 5
+ },
+ "602": {
+  "title": "ยอดเขาในแผนที่",
+  "en": "Peaks on the Map",
+  "tier": 1,
+  "dir": "Topic_6/2",
+  "samples": 5
+ },
+ "603": {
+  "title": "ภาพสะท้อนกระจก",
+  "en": "Mirror Pictures",
+  "tier": 1,
+  "dir": "Topic_6/3",
+  "samples": 6
+ },
+ "604": {
+  "title": "ค้นหาคำ 8 ทิศ",
+  "en": "Word Search",
+  "tier": 2,
+  "dir": "Topic_6/4",
+  "samples": 5
+ },
+ "605": {
+  "title": "เอียงกล่องทราย",
+  "en": "Tilting the Sand Box",
+  "tier": 2,
+  "dir": "Topic_6/5",
+  "samples": 5
+ },
+ "606": {
+  "title": "รหัสก้นหอย",
+  "en": "Spiral Cipher",
+  "tier": 2,
+  "dir": "Topic_6/6",
+  "samples": 6
+ },
+ "607": {
+  "title": "ที่ดินผืนใหญ่ที่สุด",
+  "en": "Largest Clear Plot",
+  "tier": 3,
+  "dir": "Topic_6/7",
+  "samples": 5
+ },
+ "608": {
+  "title": "หมุนวงแหวน",
+  "en": "Rotating Rings",
+  "tier": 3,
+  "dir": "Topic_6/8",
+  "samples": 5
+ },
+ "701": {
+  "title": "ตรวจรหัสผ่าน",
+  "en": "Password Checker",
+  "tier": 1,
+  "dir": "Topic_7/1",
+  "samples": 5
+ },
+ "702": {
+  "title": "รูปแบบชื่อตัวแปร",
+  "en": "Naming Styles",
+  "tier": 1,
+  "dir": "Topic_7/2",
+  "samples": 5
+ },
+ "703": {
+  "title": "ประโยคกลับหน้ากลับหลัง",
+  "en": "Palindrome Sentences",
+  "tier": 1,
+  "dir": "Topic_7/3",
+  "samples": 5
+ },
+ "704": {
+  "title": "รวมเวลา",
+  "en": "Adding Durations",
+  "tier": 2,
+  "dir": "Topic_7/4",
+  "samples": 5
+ },
+ "705": {
+  "title": "พจนานุกรมต่างดาว",
+  "en": "Alien Dictionary Order",
+  "tier": 2,
+  "dir": "Topic_7/5",
+  "samples": 5
+ },
+ "706": {
+  "title": "จัดเรียงเป็น palindrome",
+  "en": "Rearrange into a Palindrome",
+  "tier": 2,
+  "dir": "Topic_7/6",
+  "samples": 5
+ },
+ "707": {
+  "title": "ถอดรหัสรั้ว",
+  "en": "Rail Fence Decoder",
+  "tier": 3,
+  "dir": "Topic_7/7",
+  "samples": 5
+ },
+ "708": {
+  "title": "สระเท่าพยัญชนะ",
+  "en": "Balanced Substrings",
+  "tier": 3,
+  "dir": "Topic_7/8",
+  "samples": 5
+ },
+ "801": {
+  "title": "เวลาถึงปลายทาง",
+  "en": "Arrival Time",
+  "tier": 1,
+  "dir": "Topic_8/1",
+  "samples": 5
+ },
+ "802": {
+  "title": "ลิฟต์ส่งของ",
+  "en": "Freight Elevator",
+  "tier": 1,
+  "dir": "Topic_8/2",
+  "samples": 5
+ },
+ "803": {
+  "title": "ไฟจราจร",
+  "en": "Traffic Light",
+  "tier": 1,
+  "dir": "Topic_8/3",
+  "samples": 5
+ },
+ "804": {
+  "title": "ปฏิทินต่างดาว",
+  "en": "Alien Calendar",
+  "tier": 2,
+  "dir": "Topic_8/4",
+  "samples": 5
+ },
+ "805": {
+  "title": "ค่าโทรศัพท์",
+  "en": "Phone Bill",
+  "tier": 2,
+  "dir": "Topic_8/5",
+  "samples": 5
+ },
+ "806": {
+  "title": "game ไพ่สองกอง",
+  "en": "Two-Pile Card Game",
+  "tier": 2,
+  "dir": "Topic_8/6",
+  "samples": 5
+ },
+ "807": {
+  "title": "หลอดไฟวงกลม",
+  "en": "Ring of Lamps",
+  "tier": 3,
+  "dir": "Topic_8/7",
+  "samples": 5
+ },
+ "808": {
+  "title": "วันศุกร์ที่ 13",
+  "en": "Friday the 13th",
+  "tier": 3,
+  "dir": "Topic_8/8",
+  "samples": 5
+ },
+ "901": {
+  "title": "ชมรมสามชมรม",
+  "en": "Three Clubs",
+  "tier": 1,
+  "dir": "Topic_9/1",
+  "samples": 6
+ },
+ "902": {
+  "title": "เลือก subset ตามเงื่อนไข",
+  "en": "Subsets with Rules",
+  "tier": 1,
+  "dir": "Topic_9/2",
+  "samples": 6
+ },
+ "903": {
+  "title": "สลับที่คูณ matrix",
+  "en": "Do They Commute?",
+  "tier": 1,
+  "dir": "Topic_9/3",
+  "samples": 5
+ },
+ "904": {
+  "title": "หา function ที่หายไป",
+  "en": "The Missing Function",
+  "tier": 2,
+  "dir": "Topic_9/4",
+  "samples": 5
+ },
+ "905": {
+  "title": "แปลงจุดทั้งแผนที่",
+  "en": "Transform Every Point",
+  "tier": 2,
+  "dir": "Topic_9/5",
+  "samples": 5
+ },
+ "906": {
+  "title": "ประพจน์สมมูลกันหรือไม่",
+  "en": "Equivalent Statements",
+  "tier": 2,
+  "dir": "Topic_9/6",
+  "samples": 5
+ },
+ "907": {
+  "title": "สลับซ้ำจนกลับที่เดิม",
+  "en": "Back to the Start",
+  "tier": 3,
+  "dir": "Topic_9/7",
+  "samples": 6
+ },
+ "908": {
+  "title": "หารด้วยตัวใดตัวหนึ่งลงตัว",
+  "en": "Divisible by Someone",
+  "tier": 3,
+  "dir": "Topic_9/8",
+  "samples": 5
+ },
+ "1001": {
+  "title": "ลำดับสองพจน์ก่อนหน้า",
+  "en": "Two-Term Recurrence",
+  "tier": 1,
+  "dir": "Topic_10/1",
+  "samples": 6
+ },
+ "1002": {
+  "title": "บันไดขั้นชำรุด",
+  "en": "Broken Stairs",
+  "tier": 1,
+  "dir": "Topic_10/2",
+  "samples": 6
+ },
+ "1003": {
+  "title": "จ่ายเงินพอดี",
+  "en": "Exact Payment",
+  "tier": 1,
+  "dir": "Topic_10/3",
+  "samples": 6
+ },
+ "1004": {
+  "title": "จัดทีมแข่งขัน",
+  "en": "Picking a Team",
+  "tier": 2,
+  "dir": "Topic_10/4",
+  "samples": 6
+ },
+ "1005": {
+  "title": "เรียงตัวอักษรไม่ให้ซ้ำติดกัน",
+  "en": "No Twin Neighbours",
+  "tier": 2,
+  "dir": "Topic_10/5",
+  "samples": 6
+ },
+ "1006": {
+  "title": "รหัสผ่านสามสี",
+  "en": "Three-Colour Passwords",
+  "tier": 2,
+  "dir": "Topic_10/6",
+  "samples": 6
+ },
+ "1007": {
+  "title": "ปูกระเบื้องทางเดินกว้างสามช่อง",
+  "en": "Tiling a 3-Wide Corridor",
+  "tier": 3,
+  "dir": "Topic_10/7",
+  "samples": 6
+ },
+ "1008": {
+  "title": "จับมือรอบโต๊ะกลม",
+  "en": "Handshakes Around the Table",
+  "tier": 3,
+  "dir": "Topic_10/8",
+  "samples": 6
+ }
+}

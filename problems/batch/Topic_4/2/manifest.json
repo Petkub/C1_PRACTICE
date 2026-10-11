@@ -1,0 +1,131 @@
+{
+ "version": 1,
+ "tests": [
+  {
+   "name": "01",
+   "in": "0b96d60f3564576dae6580dc9e6a4c6b93d0983057caec7e8e7ea3c51c152e7a",
+   "out": "c64b40bd6b04f739d22eede5a843a916f7581a6868d763dccb4137b482233d35",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "02",
+   "in": "2996e9511893522279893671b45a45ed7ba3ca81ef0e47b074a17449bd6dfba1",
+   "out": "07535269e14de8153b0220b0d8b742ba18aff2f7c332e47de669f5bd0cba6d30",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "03",
+   "in": "0d1ce0caad51a00e4c0b3187a2e9a45c1c6fd872df97c40b3f7349024b1fda42",
+   "out": "e5d500d089c86fa0ac56329909def691f4a53dc2714f86daeadc28efb2345bed",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "04",
+   "in": "908516a06a4532ef8c3708d1fb614131df17df5acd9dc1821abf7bb3b533af43",
+   "out": "5cc3a6551605a0b4e9c3334f5eb5554c404973daf0b1a58655fa29c0ba3d47b0",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "05",
+   "in": "13fe27a3177bed618975966449eacdc7fab2225a9d70523cbffe817a15f13410",
+   "out": "f2cd15b50be9fb72abc7c47654d3841e07c220d38d043c78116440f8a7cb8b33",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "06",
+   "in": "2fb619cae4cb35b1d46d13519ba41bf64c520a416a81309033c97ec8be11e01f",
+   "out": "da3156d885c577642359a38b4613c94ac59e2d8965e18edd3be5116b55ce2cb7",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "07",
+   "in": "ed124fbf8ffd811c88b3cc955212778eacce7a20b83ad9c8e79a9729cfb9b0b9",
+   "out": "933305f987bcf5fb6c250018e35a6eee1528f06013807a4136ec13622909af97",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "08",
+   "in": "b6d292d84bd38524931698cdb88859ff8fb47ddd93422145595ecf47ea143320",
+   "out": "b94d93b30bf2e0a6ae5c5823635aee0e0708fa10b451e31f58c7b8c7e3fe651a",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "09",
+   "in": "96396bcb1274a832255a25d081220a159b779458377c15067ac8dfb43985b6d7",
+   "out": "88e93e354eac377db9294347b83babc9e5191a762e5416939aa8f094ac39f263",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "10",
+   "in": "13444611dda7743b3498c282f0956b8f7b2df22761854a91a21496a1fe196d93",
+   "out": "290a8619b6aedf7fbe04cfbba79841f7dbc4aff436746a4b371f2a99c8733de4",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "11",
+   "in": "e38daca7d0636b88f070526dce4be7ece2a5718c9f1af1c56ddbf6a30f64038b",
+   "out": "e4da06444ac47e52e38afc847999d7bc914f26825ff54c6000b6fdcc4c56bce0",
+   "in_file": false,
+   "out_file": true
+  },
+  {
+   "name": "12",
+   "in": "12df7c190965a272ad73fbb3c989f36b126f5ea1232578fa96e44cf2295a40bf",
+   "out": "6de44ea78b5c6ed3b39e18d913cf40a4f91a180ca1d122f78d1fdc891e3945a3",
+   "in_file": false,
+   "out_file": true
+  },
+  {
+   "name": "13",
+   "in": "a488d2b5bdfbfcf781f190bb9f9c838d34823c5e05bb094affd987a7cfe8baed",
+   "out": "f82b4df411453b3f37a6d29892f74f1968c7f7738592d4b97d6692b5d8742058",
+   "in_file": false,
+   "out_file": true
+  },
+  {
+   "name": "14",
+   "in": "fbb9ca4e1cf40f39051d4b8cab7861e5152db8e6387ab994436e2ca3bb1b6042",
+   "out": "a0351c15d537d68f7ea2f6520660bffa8d1eb78baaac1afb80598cc1530efa46",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "15",
+   "in": "21317b07a068a84701b143934343134908a375dad299b5389aebd4c943542c50",
+   "out": "ebd780f7a2d07a8e9fcff1f11f54a2dddac7b5641d9aba03d1f8d31db865c16b",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "16",
+   "in": "37d5abe8579e767ae423030738604d07e98bc321b55e61b617d8f3697249e20e",
+   "out": "63b51e9a6a3330e3291aa4d3f6b44c69d7fb50791c3427054c934abe929fd780",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "17",
+   "in": "6722f4d787dfa4fa1bf16e15c18e56a7b51869629355f3a52ea7879ff7abf427",
+   "out": "95a5048bbd565cf010f195cffcfc4ada541a2d12afada3d2d0db3379f6f729c1",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "18",
+   "in": "af30cc815a0fa39faa02f08dde6a4ba50ae283567d255d501fffb15c79d89454",
+   "out": "ac0d7fa0d54affe8de873762d5f7a85101c231f8ffb25ce246e79e3c7b793421",
+   "in_file": true,
+   "out_file": true
+  }
+ ]
+}
