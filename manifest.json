@@ -802,11 +802,11 @@
 ]
 },
 "files": {
-"CHANGELOG.txt": "f8fadef68a873169ec625019520a8b82fd35f2b4202cfb77e9ed9477aaecaf9a",
+"CHANGELOG.txt": "b2744206e675da7a437afcc9507378edb72a405eeaf570f53b6c4433ba1276a2",
 "README.txt": "452d59eacccd80d580e6a7e44bca31c1353c6cca3aafe55e7a46e717bbd78bfb",
 "include/bits/stdc++.h": "1545f1f4b55b3acb866effca73203f3a9131773f147331cbf4e983ebf36d6cc9",
 "judge.cmd": "84038f11038804a85edc6df3e3c64f10a72891fad6b98ac7a7ae08e358ed7f44",
-"judge.py": "c70edcf12d8ac17ff3a814dbed673524d3fae5f2b073aa80c67c8d0e71c20f53",
+"judge.py": "b09e292879ece16bc22e373bc701b09cfaa0526ad35fde4ca68a51617af9f020",
 "problems/batch/Topic_1/1/01.in": "e06ffb75fa53da6a679b87f25c306f5daaa6d0f45015dec11625dce449b17dad",
 "problems/batch/Topic_1/1/01.out": "95aebc97bc646c67fdcd923a5965b001f3c8a5c4d3a77075112e12a3a311d760",
 "problems/batch/Topic_1/1/02.in": "072b7dac2c48d2cc430b8c8cb7ca94c4866b0fd61f4eeac734bd6b98094cf88c",
@@ -7799,5 +7799,5 @@
 "": "core/",
 "problems/": "problems/"
 },
-"version": "2.1"
+"version": "2.2"
 }
