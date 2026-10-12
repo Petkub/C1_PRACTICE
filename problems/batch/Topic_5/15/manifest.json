@@ -1,0 +1,138 @@
+{
+ "version": 1,
+ "tests": [
+  {
+   "name": "01",
+   "in": "46e1008f09f8c12722d8a58cc5e67bc979b94c59dd84db76e9a2dbbe15aa10dd",
+   "out": "3fdba35f04dc8c462986c992bcf875546257113072a909c162f7e470e581e278",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "02",
+   "in": "d23c95ffc56e30d2f08198c47aa0bc25421555d98043ba4cd6b495778bed04fb",
+   "out": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "03",
+   "in": "f19d1b4e07b0194c5b455266bbc842aaacdaa70714a5c9f520f4223134662ecd",
+   "out": "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "04",
+   "in": "ffdb2b471864a2f3bbb7753ece957f6e8f0915538d88a495ac6f28d2583c44f1",
+   "out": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "05",
+   "in": "5590a10ae21e4da3fb491deaa4ccd9cb1433c232170f42da782e969ff4e8d2dd",
+   "out": "19581e27de7ced00ff1ce50b2047e7a567c76b1cbaebabe5ef03f7c3017bb5b7",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "06",
+   "in": "3b8a163fec3d203ab0ab3d2cf14bf3a2118a86cefbb7ca75112f20afbea7825f",
+   "out": "4ef43e1d62bf4b3a90a11811215268b48cbfe4978f9560541911fcc3eeb12a79",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "07",
+   "in": "f241e49ae60c2558622ec98e17be9ec1ef3ee199807582711c365240483f6869",
+   "out": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "08",
+   "in": "a672843641db31e47afa2e495208e410d7c0755fec56c8657049b04c8327ba75",
+   "out": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "09",
+   "in": "1f5c9a1a6c1ac92e3b10c511b2c76b7a576b2999fc3bfbb87c03e16a8a8d3f83",
+   "out": "b17ef6d19c7a5b1ee83b907c595526dcb1eb06db8227d650d5dda0a9f4ce8cd9",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "10",
+   "in": "f09cf530502bd83b78e56792797c470d4b0cefdcfbaebaca2d8497eee7edcffd",
+   "out": "f5ca38f748a1d6eaf726b8a42fb575c3c71f1864a8143301782de13da2d9202b",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "11",
+   "in": "69f33e32229d7e41b1d3002ce59886d407759380097376e87c3812c640ff1485",
+   "out": "e29c9c180c6279b0b02abd6a1801c7c04082cf486ec027aa13515e4f3884bb6b",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "12",
+   "in": "fa8429e06aead59155faf131676a2eec57905212e68d5c1ddfb0e3a7ddfd9c0d",
+   "out": "2397346b45823e070f6fc72ac94c0a999d234c472479f0e26b30cdf5942db854",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "13",
+   "in": "1ba00c40de3d29355e2ea5e6ee2c63272560a8698ec71893065775dc9e74a657",
+   "out": "d4679c618f1af07ee8570edd4b931e2e68e1c2d4b7d3c2f1033a9b597f85d4b0",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "14",
+   "in": "c318ea5f766989e7a543ad8f140a6b52c22aa57a76674423c1ed5ae8e8ba0f8f",
+   "out": "a340c8af529467ad13404cbf2d9a108a627cc4b3f81cea57d3a2d75ec8e15013",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "15",
+   "in": "afecc234881648927f1cbdf247c76a22f16edee1ed10728c8eac7c9e5416304c",
+   "out": "0aab41dade258be4fd8305c494f2560c9fe6853a93a0b316d88ffa6461c15d1a",
+   "in_file": false,
+   "out_file": true
+  },
+  {
+   "name": "16",
+   "in": "00fd10046fe33418cd43991ad39e8a8078f2208578126a76bb3750727130cbdf",
+   "out": "d54123de468bd42ea00dafbd777f85fe5fa1ff6404d9838c007953c25c92a1c5",
+   "in_file": false,
+   "out_file": true
+  },
+  {
+   "name": "17",
+   "in": "d3b053e7ba9512e41d6bdb463519ecf59f9e0175c4297eb72c0b1b5ccbcd28d0",
+   "out": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+   "in_file": false,
+   "out_file": true
+  },
+  {
+   "name": "18",
+   "in": "e6d6dcf9b51254f3ea1d2a74e35da8a9631b675d81fe9f86c1cec2d7961fb785",
+   "out": "4ef43e1d62bf4b3a90a11811215268b48cbfe4978f9560541911fcc3eeb12a79",
+   "in_file": false,
+   "out_file": true
+  },
+  {
+   "name": "19",
+   "in": "6a81e78502d759f89d06da54d0a9e512fbc314d0ae359011b6eae36b7cd0edfa",
+   "out": "4ef43e1d62bf4b3a90a11811215268b48cbfe4978f9560541911fcc3eeb12a79",
+   "in_file": false,
+   "out_file": true
+  }
+ ]
+}

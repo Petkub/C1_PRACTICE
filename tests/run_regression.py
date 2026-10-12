@@ -134,8 +134,9 @@ def test_student_package():
             return
         root = os.path.join(tmp, "C1_Practice")
         set1 = os.path.join(root, "Topic_3")
-        templates = [os.path.join(set1, f"{i}.cpp") for i in range(1, 9)]
-        check(all(judge.is_template(t) for t in templates), "Topic_3/1.cpp ... 8.cpp are empty templates")
+        count = len(next(s for s in judge.load_sets() if s["set"] == 3)["problems"])
+        templates = [os.path.join(set1, f"{i}.cpp") for i in range(1, count + 1)]
+        check(all(judge.is_template(t) for t in templates), f"Topic_3/1.cpp ... {count}.cpp are empty templates")
         shutil.copy(os.path.join(SAMPLES, "batch", "primes_ok.cpp"), os.path.join(set1, "1.cpp"))
         student_judge = os.path.join(os.pardir, "Judge", "judge.py")
         code, out, _ = run_judge(["1", "--no-color"], cwd=set1, judge_path=student_judge)

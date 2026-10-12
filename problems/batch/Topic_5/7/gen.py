@@ -2,54 +2,57 @@
 import os, random
 
 random.seed(507)
-V = 10**9
+M = 10**9
 tests = []
 
-def add(h):
-    n = len(h)
+def add(a):
+    n = len(a)
     assert 1 <= n <= 100_000
-    assert all(1 <= x <= V for x in h) and len(set(h)) == n
-    tests.append(f"{n}\n" + " ".join(map(str, h)) + "\n")
+    assert all(-M <= x <= M for x in a)
+    tests.append(f"{n}\n" + " ".join(map(str, a)) + "\n")
 
-def distinct(n, hi):
-    return random.sample(range(1, hi + 1), n)
+def sorted_rand(n, lo, hi):
+    return sorted(random.randint(lo, hi) for _ in range(n))
 
-def interleave(n, m, hi):
-    # the m smallest values stay in order; the rest are placed randomly between them
-    vals = sorted(distinct(n, hi))
-    small, big = vals[:m], vals[m:]
-    random.shuffle(big)
-    slots = sorted(random.sample(range(n), m))
-    out, si, bi = [], 0, 0
-    for p in range(n):
-        if si < m and p == slots[si]:
-            out.append(small[si]); si += 1
-        else:
-            out.append(big[bi]); bi += 1
-    return out
+def one_swap(a):
+    # swap two positions holding different values
+    a = a[:]
+    while True:
+        i, j = random.sample(range(len(a)), 2)
+        if a[i] != a[j]:
+            a[i], a[j] = a[j], a[i]
+            return a
+
+def two_swaps(a):
+    return one_swap(one_swap(a))
 
 # samples
-add([3, 1, 4, 2, 5])
-add([10, 20, 30])
-add([7])
-add([5, 4, 3, 2, 1])
-add([4, 1, 5, 2, 6, 3])
-add([1000000000, 1])
-# hidden (small: checked by BFS)
-add([2, 3, 1])
-add([1, 3, 2])
-add([6, 1, 7, 2, 8, 3, 5, 4])
-add([2, 1, 3, 4, 5, 6, 7, 8])
-add(distinct(8, 20))
-add(distinct(7, V))
-add(interleave(8, 5, 100))
-# large
-add(list(range(1, 100_001)))                                       # 0
-add(list(range(2, 100_001)) + [1])                                 # n - 1
-add(interleave(100_000, 37_000, 1_000_000))
-add(distinct(30_000, V))
-add(interleave(50_000, 49_999, V))
-add([i * 2 for i in range(1, 25_001)] + [i * 2 - 1 for i in range(1, 25_001)])   # evens then odds
+add([1, 5, 3, 4, 2])
+add([3, 1, 2, 4])
+add([1, 2, 2])
+add([5, 3])
+add([2, 2, 1, 1])
+add([1, 3, 2, 2, 4])
+# hidden
+add([42])
+add([7, 7, 7, 7])
+add([M, -M])
+add([1, 2, 3, 5, 4])                              # adjacent swap at the end
+add([2, 3, 1])                                    # 3-cycle
+add([1, 1, 3, 2, 2, 2, 4])                        # duplicates: swap 3 and 6
+add(one_swap(sorted_rand(12, 1, 4)))
+add(one_swap(sorted_rand(200, -50, 50)))
+add(two_swaps(sorted_rand(200, -1000, 1000)))
+# max
+add(sorted_rand(100_000, -M, M))
+add(one_swap(sorted_rand(100_000, 1, 3)))
+add(two_swaps(sorted_rand(100_000, 1, 1000)))
+a = list(range(1, 100_001))
+a[0], a[-1] = a[-1], a[0]
+add(a)
+b = list(range(1, 100_001))
+b[50_000], b[50_001], b[50_002] = b[50_001], b[50_002], b[50_000]   # 3-cycle: NO
+add(b)
 
 os.makedirs("tests", exist_ok=True)
 for i, t in enumerate(tests, 1):

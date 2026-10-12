@@ -1,7 +1,7 @@
 # C1_PRACTICE — POSN Camp 1 Topic Practice (teacher's guide)
 
 This repo is the source of the judge and test data that students run on their own computers for Camp 1
-topic practice (10 topics × 8 problems, easy to hard, folders `Topic_1` ... `Topic_10`). Students never clone it: they download `C1_Practice.zip` once from
+topic practice (10 topics × 20 problems, easy to hard, folders `Topic_1` ... `Topic_10`). Students never clone it: they download `C1_Practice.zip` once from
 [Releases](https://github.com/Petkub/C1_PRACTICE/releases/latest), and from then on their judge **updates itself from
 this repo** every time you push to `main`.
 
@@ -23,7 +23,7 @@ core/                  what students get inside Judge/   (judge.py, updater.py, 
 problems/batch/        test data: Topic_K/N/01.in, 01.out, ..., manifest.json (hashes), gen.py (rebuilds tests > 64 KB
                        on the student's computer)   + problems.json (problem bank) + sets.json (topics)
 student/               the rest of the student package: README.txt, .vscode/, Topic_K/Topic_K.pdf,
-                       set_files/ (Makefile, judge.bat, template.cpp -> 1.cpp ... 8.cpp)
+                       set_files/ (Makefile, judge.bat, template.cpp -> 1.cpp ... 20.cpp)
 samples/               known-verdict programs used by the tests (expected.json says which verdict each must get)
 tests/run_regression.py   the test suite: run before every push
 tools/build_manifest.py   writes manifest.json (hashes of everything students get)
@@ -32,7 +32,7 @@ VERSION                   the version students see ("Judge v1.0")
 manifest.json             generated, served to students by GitHub; never edit by hand
 ```
 
-What a student has: `C1_Practice/Judge/` (= `core/` + `problems/` + `manifest.json`) and `C1_Practice/Topic_K/1.cpp ... 8.cpp`
+What a student has: `C1_Practice/Judge/` (= `core/` + `problems/` + `manifest.json`) and `C1_Practice/Topic_K/1.cpp ... 20.cpp`
 (their code, which the updater never touches).
 
 ## 2. One-time setup on a new computer
@@ -82,11 +82,11 @@ that students already have). Outputs always come from sol.cpp.
 3. Run the tests, release. If it cannot be tested on Linux (a Windows-only problem), rely on CI's Windows job.
 
 ### 4c. Add a new topic (e.g. topic 11)
-1. Add it to `C1_PRACTICE_SRC/topics.json` and write `topics/T11/1..8/`; check each problem.
+1. Add it to `C1_PRACTICE_SRC/topics.json` and write `topics/T11/1..20/`; check each problem.
 2. `python3 build.py all` writes `problems/batch/Topic_11/`, the new entries of `problems.json` / `sets.json`
    and `student/Topic_11/Topic_11.pdf`.
 3. Release. Existing students get the test data, `Topic_11/Topic_11.pdf`, `Makefile`, `judge.bat`, and the
-   updater **creates** `Topic_11/1.cpp ... 8.cpp` (templates are only ever created, never overwritten).
+   updater **creates** `Topic_11/1.cpp ... 20.cpp` (templates are only ever created, never overwritten).
 
 ### 4d. Change something students see outside Judge/ (README, Makefile, judge.bat, template)
 Edit it under `student/` and release. These are *managed* files: the updater replaces them on every student's

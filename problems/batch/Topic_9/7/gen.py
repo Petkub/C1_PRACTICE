@@ -1,74 +1,43 @@
-# Writes tests/NN.in for this problem. Samples first (01..06), then hidden tests.
+# Writes tests/NN.in for this problem. Samples first (01..05), then hidden tests.
 import os, random
-from math import gcd
 
 random.seed(907)
-MAXN = 100_000
 tests = []
 
-def answer(f):
-    n = len(f)
-    if sorted(f) != list(range(1, n + 1)):
-        return -1
-    seen = [False] * (n + 1)
-    l = 1
-    for i in range(1, n + 1):
-        if not seen[i]:
-            c, x = 0, i
-            while not seen[x]:
-                seen[x] = True; x = f[x - 1]; c += 1
-            l = l // gcd(l, c) * c
-    return l
+def add(a, b):
+    p, q = len(a), len(a[0])
+    assert p >= 1 and q >= 1 and p * q <= 50000
+    assert all(len(r) == q for r in a)
+    assert len(b) == q and all(len(r) == p for r in b)
+    for m in (a, b):
+        for r in m:
+            for x in r:
+                assert -1000 <= x <= 1000
+    lines = [f"{p} {q}"] + [" ".join(map(str, r)) for r in a] + [" ".join(map(str, r)) for r in b]
+    tests.append("\n".join(lines) + "\n")
 
-def add(f):
-    n = len(f)
-    assert 1 <= n <= MAXN and all(1 <= v <= n for v in f)
-    assert answer(f) <= 10**18
-    tests.append(f"{n}\n" + " ".join(map(str, f)) + "\n")
-
-def from_cycles(lengths, n=None, shuffle=True):
-    total = sum(lengths)
-    if n is None:
-        n = total
-    lengths = lengths + [1] * (n - total)
-    labels = list(range(1, n + 1))
-    if shuffle:
-        random.shuffle(labels)
-    f = [0] * n
-    p = 0
-    for L in lengths:
-        cyc = labels[p:p + L]
-        for j in range(L):
-            f[cyc[j] - 1] = cyc[(j + 1) % L]
-        p += L
-    return f
+def rnd(p, q, lo=-1000, hi=1000):
+    return [[random.randint(lo, hi) for _ in range(q)] for _ in range(p)]
 
 # samples
-add([2, 3, 1])
-add([2, 2])
-add([1, 2, 3, 4])
-add([2, 1, 4, 5, 3])
-add([3, 1, 2, 3])
-add([2, 3, 4, 1, 6, 7, 8, 9, 10, 5])
+add([[1, 2], [3, 4]], [[5, 6], [7, 8]])
+add([[1], [2], [3]], [[4, 5, 6]])
+add([[1, -2, 3]], [[4], [5], [-6]])
+add([[-7]], [[0]])
+add([[2, 0, -1], [1, 3, 2]], [[1, 4], [0, -2], [5, 1]])
 # hidden
-add([1])
-add(list(range(1, MAXN + 1)))                       # identity
-add([i % MAXN + 1 for i in range(1, MAXN + 1)])      # one big cycle
-primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47]
-add(from_cycles(primes, 20_000))                       # lcm = 47# ~ 6.1e17
-add(from_cycles([2] * 15_000))                        # product of lengths overflows, lcm = 2
-add(from_cycles([6, 10, 15] * 500, 20_000))          # lcm 30
-add(from_cycles([64, 27, 25, 49, 11, 13, 17, 19, 23, 29, 31, 37], 20_000))
-f = from_cycles(primes, 20_000); f[-1] = f[0]             # not a bijection, found only at the end
-add(f)
-f = list(range(1, MAXN + 1)); f[0] = 2                  # 1 -> 2 -> 2
-add(f)
-add(from_cycles([3, 4, 5]))
-add(from_cycles([7, 9, 4, 5]))
-add(from_cycles([random.randint(1, 6) for _ in range(5)]))
-add([random.randint(1, 8) for _ in range(8)])
-add(from_cycles([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
-
+add([[1000]], [[1000]])
+add([[1000]] * 50000, [[1000] * 50000])                        # biggest sum, p large q = 1
+add(rnd(25000, 2, -1000, -990), rnd(2, 25000, 990, 1000))      # big negative
+add(rnd(223, 224), rnd(224, 223))
+add(rnd(1, 50000, -9, 9), rnd(50000, 1, -9, 9))                # p = 1
+add(rnd(5000, 10, -3, 3), rnd(10, 5000, -3, 3))
+add(rnd(3, 3), rnd(3, 3))
+add(rnd(7, 2), rnd(2, 7))
+add(rnd(30, 40), rnd(40, 30))
+add(rnd(200, 5), rnd(5, 200))
+alt = [[1000 if (i + k) % 2 == 0 else -1000 for k in range(4)] for i in range(2000)]
+add(alt, [[1000 if (k + j) % 2 == 0 else -1000 for j in range(2000)] for k in range(4)])
 os.makedirs("tests", exist_ok=True)
 for i, t in enumerate(tests, 1):
     with open(f"tests/{i:02d}.in", "w") as f:

@@ -15,7 +15,7 @@
     },
     {
       "label": "Judge whole set",
-      "detail": "judge 1.cpp ... 8.cpp of the set you are editing",
+      "detail": "judge 1.cpp ... 20.cpp of the set you are editing",
       "type": "process",
       "command": "python3",
       "windows": { "command": "python" },

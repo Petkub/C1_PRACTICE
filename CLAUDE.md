@@ -1,7 +1,7 @@
 # C1_PRACTICE: POSN Camp 1 Topic Practice Judge
 
 A terminal judge that students run on their own machines to practice for the POSN Computer Olympiad Camp 1,
-organised by topic: 10 topics x 8 problems (easy to hard), folders `Topic_K`. In the judge, the data files and
+organised by topic: 10 topics x 20 problems (easy to hard), folders `Topic_K`. In the judge, the data files and
 options keep the C1_MOCK names (`sets.json`, `--set K`): a "set" here is a topic.
 Sibling repos `C1_MOCK` (Camp 1 mock exams) and `C2_MOCK` (Camp 2) share the same judge; fix shared bugs in all three.
 
@@ -41,12 +41,12 @@ C1_PRACTICE/
   problems/
     batch/Topic_K/N/*.in|out, gen.py, manifest.json   # see "Compact test data" below
     batch/problems.json         # problem bank: id -> title, tier, dir (Topic_K/N), samples, subtasks, optional ml (MB)
-    batch/sets.json             # topic K -> list of 8 problem ids (id = 100*K + N)
+    batch/sets.json             # topic K -> list of 20 problem ids (id = 100*K + N)
     interactive/<name>/{problem.json, interactor.cpp, tests/NN.in}
     communication/<name>/{problem.json, manager.cpp, stub/, tests/}
   student/                      # student-side files outside Judge/ (copied by build_dist.py)
     README.txt, .vscode/, Topic_K/Topic_K.pdf
-    set_files/{Makefile, judge.bat, template.cpp}   # put in every Topic_K; template.cpp -> 1.cpp ... 8.cpp
+    set_files/{Makefile, judge.bat, template.cpp}   # put in every Topic_K; template.cpp -> 1.cpp ... 20.cpp
   samples/                      # known-verdict programs used as regression tests
     batch/primes_ok.cpp, primes_offbyone.cpp, primes_loop.cpp, primes_crash.cpp, primes_syntax.cpp
     interactive/guess_ok.cpp, guess_noflush.cpp, guess_linear.cpp, guess_crash.cpp
@@ -64,7 +64,7 @@ C1_PRACTICE/
 ```
 
 Student-side layout (what `build_dist.py` produces): `C1_Practice/Judge/` = `core/` + `problems/`,
-and `C1_Practice/Topic_K/1.cpp ... 8.cpp` = student files. The repo layout is **not** the student layout.
+and `C1_Practice/Topic_K/1.cpp ... 20.cpp` = student files. The repo layout is **not** the student layout.
 `judge.py` finds batch data in the first existing of `Judge/problems/batch/` (student package),
 `../problems/batch/` (repo, run from `core/`) and `Judge/tests/` (older zips, JSON files next to judge.py).
 

@@ -4,14 +4,14 @@ Requirements: Python 3.7+ and g++ in PATH (Linux / macOS / Windows; on Windows t
 macOS: g++ is Apple clang without <bits/stdc++.h>; the judge adds include/ (a fallback header) automatically.
 
 Inside a topic folder (e.g. Topic_3):
-  python3 ../Judge/judge.py               judge the whole topic (1.cpp ... 8.cpp)
+  python3 ../Judge/judge.py               judge the whole topic (1.cpp ... 20.cpp)
   python3 ../Judge/judge.py 5.cpp         judge problem 5 of this topic
   python3 ../Judge/judge.py 5             the same (just the problem number)
 
 From the Judge folder (or use ../Judge/judge.py from a topic folder):
   python3 judge.py --list                 list all 10 topics and their problems
   python3 judge.py --set 3                show topic 3
-  python3 judge.py --set 3 FOLDER         judge a whole topic (files 1.cpp ... 8.cpp in FOLDER)
+  python3 judge.py --set 3 FOLDER         judge a whole topic (files 1.cpp ... 20.cpp in FOLDER)
   python3 judge.py my.cpp 3-5             judge one solution: topic 3, problem 5
 
 Options: --tl SECONDS  --ml MB (default 64)  --diff N  --stop  --ascii  --no-color

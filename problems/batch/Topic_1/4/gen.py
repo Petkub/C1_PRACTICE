@@ -1,52 +1,63 @@
 # Writes tests/NN.in for this problem. Samples first (01..05), then hidden tests.
 import os, random
 
-random.seed(104)
+random.seed(1004)
 E = 10**18
 tests = []
 
-def add(qs):
-    assert 1 <= len(qs) <= 100_000
-    for k, c, l, r in qs:
-        assert 1 <= k <= E and -E <= c <= E and -E <= l <= r <= E
-    tests.append(f"{len(qs)}\n" + "".join(f"{k} {c} {l} {r}\n" for k, c, l, r in qs))
+def seat(k, r, c):
+    return (r - 1) * k + (c if r % 2 == 1 else k + 1 - c)
 
-def small(n, mv, mk):
-    qs = []
-    for _ in range(n):
-        l = random.randint(-mv, mv)
-        r = random.randint(l, mv)
-        qs.append((random.randint(1, mk), random.randint(-3 * mv, 3 * mv), l, r))
-    return qs
+def add(k, qs):
+    assert 1 <= k <= E and 1 <= len(qs) <= 100_000
+    lines = []
+    for q in qs:
+        if q[0] == 1:
+            assert len(q) == 2 and 1 <= q[1] <= E
+        else:
+            assert len(q) == 3 and q[1] >= 1 and 1 <= q[2] <= k and seat(k, q[1], q[2]) <= E
+        lines.append(" ".join(map(str, q)))
+    tests.append(f"{k} {len(qs)}\n" + "\n".join(lines) + "\n")
 
-def big(n):
+def rand_queries(k, cnt, maxn):
     qs = []
-    for _ in range(n):
-        l = random.randint(-E, E)
-        r = random.randint(l, E)
-        k = random.choice([random.randint(1, 10), random.randint(1, 10**9), random.randint(1, E)])
-        qs.append((k, random.randint(-E, E), l, r))
+    for _ in range(cnt):
+        n = random.randint(1, maxn)
+        if random.random() < 0.5:
+            qs.append((1, n))
+        else:
+            r = (n - 1) // k + 1
+            c = random.randint(1, k)
+            while seat(k, r, c) > maxn:
+                c = random.randint(1, k)
+            qs.append((2, r, c))
     return qs
 
 # samples
-add([(5, 3, 1, 20), (5, 3, -10, 2)])
-add([(4, 0, 1, 3), (1, 5, -3, 3)])
-add([(3, -1, -1, -1), (1_000_000, -999_999, -1_000_000, 1_000_000)])
-add([(7, 100, -20, -1), (7, -100, -20, -1), (2, 1, -6, 6)])
-add([(10, 7, 7, 7), (10, 7, 8, 16), (10, -3, -3, 7)])
+add(4, [(1, 6), (1, 4), (1, 9), (2, 2, 1), (2, 3, 4)])
+add(3, [(1, 6), (1, 7), (2, 2, 3)])
+add(1, [(1, 5), (2, 6, 1)])
+add(5, [(1, 10), (1, 11), (2, 4, 1)])
+add(10**9, [(1, 2 * 10**9), (2, 3, 1)])
 # hidden, small (checked by the brute)
-add(small(300, 30, 8))
-add(small(300, 1000, 50))
-add([(k, c, l, r) for k in range(1, 6) for c in range(-6, 7) for l in range(-6, 7) for r in range(l, 7)][:100000])
-add([(1, 0, -E, -E), (1, 0, E, E), (2, 0, -E, -E), (3, E, -E, -E + 5), (E, E, E - 3, E), (E, -E, -E, -E + 2),
-     (E, E, -E, -E + 3), (2, -E + 1, -E, -E + 1), (7, E, E - 20, E), (5, -E, E - 9, E)])
+add(2, [(1, n) for n in range(1, 21)] + [(2, r, c) for r in range(1, 11) for c in (1, 2)])
+add(7, [(1, n) for n in range(1, 50)] + [(2, r, c) for r in range(1, 8) for c in range(1, 8)])
+add(1, rand_queries(1, 500, 2000))
+add(10, rand_queries(10, 2000, 5000))
+add(97, rand_queries(97, 2000, 5000))
+add(1000, rand_queries(1000, 1000, 5000))
 # hidden, big
-add([(E, -E, -E, E), (E, E, -E, E - 1), (E, E - 1, -E, E), (1, 0, -E, E), (1, E, -E, E), (2, -E, -E, E), (E, 0, -E, E), (E, 1, -E, E), (E, -1, -E, E)])
-add([(E - 1, -E, -E, E), (999_999_999_999_999_999, E, -E, E), (3, E, -E, E), (7, -E, -E, E), (2, -E + 1, -E, -E + 1)])
-add(big(20_000))
-add(big(8_000))
-add(small(2000, 30_000, 10**6))
-add([(k, random.randint(-E, E), -E, E) for k in (random.randint(1, 100) for _ in range(1000))])
+add(E, [(1, E), (1, 1), (2, 1, E), (2, 1, 1)])
+h = E // 2
+add(h, [(1, E), (1, h), (1, h + 1), (2, 2, 1), (2, 2, h), (2, 1, h), (1, 1)])
+add(3, [(1, E), (1, E - 1), (1, E - 2), (1, E - 3), (2, 333333333333333333, 1),
+        (2, 333333333333333333, 3), (2, 333333333333333334, 3)])
+add(2, [(1, E), (1, E - 1), (2, E // 2, 1), (2, E // 2, 2), (2, 1, 2)])
+add(10**9, rand_queries(10**9, 25_000, E))
+add(999_999_999_989, rand_queries(999_999_999_989, 25_000, E))
+kr = random.randint(E // 3, E)
+add(kr, rand_queries(kr, 20_000, E))
+add(1, rand_queries(1, 20_000, E))
 
 os.makedirs("tests", exist_ok=True)
 for i, t in enumerate(tests, 1):

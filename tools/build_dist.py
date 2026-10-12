@@ -12,7 +12,7 @@ Layout produced:
                                                plus manifest.json itself (the installed version for updater.py)
   C1_Practice/Topic_K/Topic_K.pdf                  from student/Topic_K/
   C1_Practice/Topic_K/Makefile, judge.bat         from student/set_files/
-  C1_Practice/Topic_K/1.cpp ... 8.cpp             empty template (student/set_files/template.cpp)
+  C1_Practice/Topic_K/1.cpp ... 20.cpp            empty template (student/set_files/template.cpp)
 The manifest is rebuilt first, so the zip and manifest.json always agree.
 """
 import os

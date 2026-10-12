@@ -1,0 +1,131 @@
+{
+ "version": 1,
+ "tests": [
+  {
+   "name": "01",
+   "in": "afc5ef900e6f92cf9c3884eec36fc6e010a0dee0471767c141337fffdc022536",
+   "out": "e99e144bfc65e8f855e5d5bf3c5af53b009cc7ec37c8a3d56efb184c0ac563c8",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "02",
+   "in": "0bafd3e58496e2d8c151220371d52bbd23cdfdcd76a8e82d0948b5d042254946",
+   "out": "933305f987bcf5fb6c250018e35a6eee1528f06013807a4136ec13622909af97",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "03",
+   "in": "0e566054496d1949d22d08def67461f7ce88f1762061b57c286ddaa2578ad242",
+   "out": "020a7c91e30725bb191818987340dec6040aff93923840de685e1e1d7b3d071a",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "04",
+   "in": "339e4bd66bdc3d491b656854151e82f28aa98f257eb8ed5d38698acf6155f1bf",
+   "out": "3bb648c7ea197a31318b13326b642334d0206f16ae8ba62d0f41e50d470be542",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "05",
+   "in": "72bc83dbab984823f8fee400c6d65bd6f318aaab94e8d3451ad355b94957d81b",
+   "out": "e99e144bfc65e8f855e5d5bf3c5af53b009cc7ec37c8a3d56efb184c0ac563c8",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "06",
+   "in": "63060710da9776834a05f2bb3329c45e8ecfb36ba967bf40f3684c86ced67e6a",
+   "out": "020a7c91e30725bb191818987340dec6040aff93923840de685e1e1d7b3d071a",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "07",
+   "in": "391af992d51912c858f913c5218e94ddfefcc578b49800aef356afd711aa46c7",
+   "out": "933305f987bcf5fb6c250018e35a6eee1528f06013807a4136ec13622909af97",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "08",
+   "in": "78ea8bc723ba49f0a1fb86c7fea028da0395900b6802698ab569dec6a58334d5",
+   "out": "73046337e229e26ab780c13434bdb6371bfea35834f7b08f04e44dfafbaeb7bd",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "09",
+   "in": "8cbef567ba20469168d5cf5b8d8ff0c9f5b48cfa5b4cf49a29ff64854d05976a",
+   "out": "73046337e229e26ab780c13434bdb6371bfea35834f7b08f04e44dfafbaeb7bd",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "10",
+   "in": "eb4e695e9e35f7294fa10b4398ca494134986029374b874d1ac008736d2c8b87",
+   "out": "c551819a34dd37068a5c060d2d545450d9d57ced21cae9ac4d52f678b95382e9",
+   "in_file": false,
+   "out_file": true
+  },
+  {
+   "name": "11",
+   "in": "1343135f8a513a0e6d4745d73c80bd0cd7587a9f54390d3f7efd54f74843c2b3",
+   "out": "654135f11e5b71d17dc7ac1dcfa0f5a7d312614dc4c768d01b6cc09220c699ad",
+   "in_file": false,
+   "out_file": true
+  },
+  {
+   "name": "12",
+   "in": "e55ec19ca2bf6b3ae0dac1a57a291b102558274f3ea892edac9b5b71836c87cd",
+   "out": "87fe2571f194c7433f7a66c6bab392ce696174aafe4bd276d4516f0c87c5f860",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "13",
+   "in": "0096504577281192b3eb02a780f1333bc3c2c492fdfbc8771a7eb9e8b1cc8c3a",
+   "out": "2b971c3fe155f85b0ab0c70730ea039115a05cfcd68b91c9d29bb5dad9ab0d8d",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "14",
+   "in": "88dd3c02be86b1f3c2bcd17c613cd7832400d73a03c9a2b8b0fd1766419ba99e",
+   "out": "fce7073854a319eca6a9d540e341106a5fd487033a20897095f1d9dcb57b399a",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "15",
+   "in": "2d5544dff2483b36ba1915ca2120b284d188d7e9b78aa843d9831d9d44d2e80d",
+   "out": "b30fcbfd3c76a7ce74c4abbd0690d70e2fecfcf63ae24da244b34a816a0a3baa",
+   "in_file": false,
+   "out_file": true
+  },
+  {
+   "name": "16",
+   "in": "6a3400aec8eadaf4d2b4200cb4a9e5bc8526645cec32a20d1644bad9badfcc2a",
+   "out": "337d1a8a80ccd21a406b5aad8f2d27e6b011923b57baaa23467939aa09208bab",
+   "in_file": false,
+   "out_file": true
+  },
+  {
+   "name": "17",
+   "in": "f7a272345aef0813ab02c0fa3f0199b10ccf099188617c41309ef539aea8f5a4",
+   "out": "020a7c91e30725bb191818987340dec6040aff93923840de685e1e1d7b3d071a",
+   "in_file": true,
+   "out_file": true
+  },
+  {
+   "name": "18",
+   "in": "c550c5746c4400bfca965f4a462d66bcf02e89aecb326038885fa7c4bcdd1d32",
+   "out": "ec82431695c9d926272a486b33a04b15ac3ee79df6a94f6752292fda132ba881",
+   "in_file": true,
+   "out_file": true
+  }
+ ]
+}

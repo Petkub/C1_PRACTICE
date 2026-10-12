@@ -4,12 +4,12 @@ POSN Camp 1 Practice Judge
 ==========================
 
 Usage (inside a Topic_K folder, e.g. Topic_3, with the judge in ../Judge)
-  python3 ../Judge/judge.py                    judge the whole topic (1.cpp ... 8.cpp in this folder)
+  python3 ../Judge/judge.py                    judge the whole topic (1.cpp ... 20.cpp in this folder)
   python3 ../Judge/judge.py 5.cpp              judge problem 5 of this topic   (or just: python3 ../Judge/judge.py 5)
 
 Usage (anywhere)
   python3 judge.py SOLUTION.cpp K-P            judge one solution for topic K, problem P   (e.g. 3-5)
-  python3 judge.py --set K FOLDER              judge a whole practice topic (files 1.cpp ... 8.cpp in FOLDER)
+  python3 judge.py --set K FOLDER              judge a whole practice topic (files 1.cpp ... 20.cpp in FOLDER)
   python3 judge.py --set K                     show the problems of practice topic K
   python3 judge.py --list                      list all topics and problems
 
@@ -1175,7 +1175,7 @@ TEMPLATE_WORDS = ("#include <bits/stdc++.h> using namespace std; int32_t main() 
 
 
 def is_template(src):
-    """True if src is still the untouched 1.cpp ... 8.cpp template (whitespace ignored)."""
+    """True if src is still the untouched N.cpp template (whitespace ignored)."""
     try:
         with open(src, "rb") as f:
             data = f.read(4096)
@@ -1197,9 +1197,10 @@ def cmd_set(k, folder, meta, sets, st, tl, show_diff):
             f"{s.get('level_en', '')}",
             f"{len(probs)} problems · {100 * len(probs)} points · easy to hard"]
     box(st, head, st.dim)
+    w = len(str(len(probs)))            # 'Problem 1 ' lines up with 'Problem 10' in a 20-problem topic
     for i, n in enumerate(probs, 1):
         m = meta.get(n, {})
-        print(f"  Problem {i}   {stars(st, m.get('tier', 0))}  " + st.bold(m.get("en", "?")))
+        print(f"  Problem {i:<{w}}   {stars(st, m.get('tier', 0))}  " + st.bold(m.get("en", "?")))
     if folder is None:
         print()
         if student_layout():
@@ -1254,9 +1255,10 @@ def cmd_set(k, folder, meta, sets, st, tl, show_diff):
         print(f"  {bar(st, sc / 100)}  {st.bold(str(sc))} / 100")
     print()
     rule(st, "Scoreboard")
+    w = len(str(len(probs)))
     for i, (n, sc) in enumerate(zip(probs, scores), 1):
         name = clip(meta.get(n, {}).get("en", "?"), 28)
-        print(f"  Problem {i}  " + st.dim(name) + " " * (30 - len(name)) + f"{bar(st, sc / 100, 16)} {sc:>4}")
+        print(f"  Problem {i:<{w}}  " + st.dim(name) + " " * (30 - len(name)) + f"{bar(st, sc / 100, 16)} {sc:>4}")
     total = sum(scores)
     print()
     full = 100 * len(probs)
@@ -1459,12 +1461,12 @@ def main():
             if k is None:               # e.g. Topic_3 - Copy/5.cpp
                 return not_a_topic_folder(st, os.path.dirname(os.path.abspath(a)), name)
             print(st.red(f"Cannot tell the problem number from the file name '{name}'."))   # e.g. 5_brute.cpp
-            print(st.dim(f"  Name it 1.cpp ... 8.cpp, or give the problem as K-P, e.g.:"))
+            print(st.dim(f"  Name it 1.cpp, 2.cpp, ..., or give the problem as K-P, e.g.:"))
             print(f"  {PY} {prog_name()} \"{name}\" {k}-5")
             return 1
         else:
             return usage("expected SOLUTION.cpp and a problem (e.g. 3-5), "
-                         "or run it inside a Topic_K folder (files 1.cpp ... 8.cpp)")
+                         "or run it inside a Topic_K folder (files 1.cpp, 2.cpp, ...)")
     if len(pos) != 2:
         return usage("expected SOLUTION.cpp and a problem (e.g. 3-5)")
     src, parg = pos
@@ -1483,7 +1485,7 @@ def main():
     if not pdir:
         sets = load_sets()
         print(st.red(f"Problem not found: {parg}"))
-        print(st.dim(f"  Use K-P with topic K = 1-{len(sets)} and problem P = 1-8 (e.g. 3-5); see --list."))
+        print(st.dim(f"  Use K-P with topic K = 1-{len(sets)} and problem P = 1-{max(len(s['problems']) for s in sets)} (e.g. 3-5); see --list."))
         return 1
     if not shutil.which("g++"):
         print(st.red("g++ not found. Please install a C++ compiler and add it to PATH."))

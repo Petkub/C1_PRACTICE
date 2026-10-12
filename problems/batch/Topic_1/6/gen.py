@@ -1,66 +1,67 @@
 # Writes tests/NN.in for this problem. Samples first (01..05), then hidden tests.
 import os, random
 
-random.seed(106)
+random.seed(1006)
 G = 10**9
 tests = []
 
-def inside(r, x, y):
-    x1, y1, x2, y2 = r
-    return x1 < x < x2 and y1 < y < y2
-
-def add(r, qs):
-    x1, y1, x2, y2 = r
-    assert -G <= x1 < x2 <= G and -G <= y1 < y2 <= G
+def add(qs):
     assert 1 <= len(qs) <= 100_000
     for a, b, c, d in qs:
-        assert all(-G <= v <= G for v in (a, b, c, d))
-        assert not inside(r, a, b) and not inside(r, c, d)
-    tests.append(f"{x1} {y1} {x2} {y2}\n{len(qs)}\n" + "".join(f"{a} {b} {c} {d}\n" for a, b, c, d in qs))
+        assert all(-G <= v <= G for v in (a, b, c, d)) and b != 0 and d != 0
+    tests.append(f"{len(qs)}\n" + "".join(f"{a} {b} {c} {d}\n" for a, b, c, d in qs))
 
-def rand_point(r, lo, hi, bias):
-    x1, y1, x2, y2 = r
+def nz(lo, hi):
     while True:
-        if random.random() < bias:
-            # a point in a column or row crossing the building (interesting cases)
-            if random.random() < 0.5:
-                x = random.randint(x1, x2)
-                y = random.choice([random.randint(lo, y1), random.randint(y2, hi)])
-            else:
-                y = random.randint(y1, y2)
-                x = random.choice([random.randint(lo, x1), random.randint(x2, hi)])
-        else:
-            x, y = random.randint(lo, hi), random.randint(lo, hi)
-        if lo <= x <= hi and lo <= y <= hi and not inside(r, x, y):
-            return x, y
+        v = random.randint(lo, hi)
+        if v != 0:
+            return v
 
-def queries(r, n, lo, hi, bias=0.7):
-    return [rand_point(r, lo, hi, bias) + rand_point(r, lo, hi, bias) for _ in range(n)]
+def flip(a, b):
+    # same value, random sign placement
+    return (-a, -b) if random.random() < 0.5 else (a, b)
+
+def near(m):
+    # two fractions that are equal or extremely close, with values up to m
+    x = random.randint(3, m)
+    kind = random.randint(0, 3)
+    if kind == 0:
+        a, b, c, d = x, x - 1, x - 1, x - 2
+    elif kind == 1:
+        p, q = random.randint(1, 1000), random.randint(1, 1000)
+        k1, k2 = random.randint(1, m // 1000), random.randint(1, m // 1000)
+        a, b, c, d = p * k1, q * k1, p * k2, q * k2
+    elif kind == 2:
+        a, b, c, d = 1, x, 1, x - 1
+    else:
+        a, b, c, d = x - 1, x, x - 2, x - 1
+    if random.random() < 0.5:
+        a, c = -a, -c
+    if random.random() < 0.5:
+        a, b, c, d = c, d, a, b
+    a, b = flip(a, b)
+    c, d = flip(c, d)
+    return (a, b, c, d)
 
 # samples
-add((0, 0, 4, 3), [(2, -1, 2, 5), (0, 0, 4, 3), (1, 0, 3, 3)])
-add((0, 0, 2, 2), [(1, 0, 1, 2), (-1, 1, 3, 1), (1, 0, 1, 5)])
-add((0, 0, 1, 5), [(0, 2, 1, 2), (-3, 3, 4, 3)])
-add((-2, -2, 6, 3), [(5, -4, 5, 4), (-3, 0, 7, 0), (-3, 0, 7, 5), (0, 3, 0, 3)])
-add((1, 1, 9, 9), [(5, 0, 5, 10), (0, 5, 10, 5), (2, 0, 8, 10), (8, 0, 2, 9)])
-# hidden, small (checked by the brute)
-for _ in range(3):
-    x1, y1 = random.randint(-8, 5), random.randint(-8, 5)
-    r = (x1, y1, x1 + random.randint(1, 9), y1 + random.randint(1, 9))
-    add(r, queries(r, 400, -12, 14))
-r = (-20, -5, 25, 30)
-add(r, queries(r, 300, -30, 40, 0.9))
-r = (0, 0, 2, 100)                       # one column of inside points
-add(r, queries(r, 300, -5, 105, 0.9))
+add([(1, 2, 2, 4), (3, 4, 2, 3), (-1, 3, 1, -2)])
+add([(2, -3, -4, 6), (5, -7, 0, 1), (0, 5, 0, -3)])
+add([(-3, -4, 3, 4), (-7, 2, -10, 3), (7, -2, 10, -3)])
+add([(1, 1000000000, -1, -999999999)])
+add([(999, 1000, 998, 999), (-5, 1, 5, -1), (6, -4, -3, 2)])
+# hidden, small
+R = range(-4, 5)
+add([(a, b, c, d) for a in R for b in R for c in R for d in R if b != 0 and d != 0])
+add([(random.randint(-30, 30), nz(-30, 30), random.randint(-30, 30), nz(-30, 30)) for _ in range(5000)])
+add([near(1000) for _ in range(5000)])
 # hidden, big
-r = (-G, -G, G, G)
-add(r, [(0, -G, 0, G), (-G, 0, G, 0), (-G, -G, G, G), (1, -G, 2, G), (G - 1, G, -G + 1, -G), (-G, -G, -G, G)])
-r = (-G, -5, G, 5)
-add(r, [(0, -5, 0, 5), (-G + 1, 5, G - 1, -5), (-G, 0, G, 0), (3, -G, 4, G)])
-r = (-123_456_789, -987_654_321, 876_543_210, 12_345_678)
-add(r, queries(r, 50_000, -G, G, 0.8))
-r = (-G + 1, -G + 1, G - 1, G - 1)
-add(r, queries(r, 20_000, -G, G, 0.9))
+add([(G, G - 1, G - 1, G - 2), (G - 1, G - 2, G, G - 1), (-G, G - 1, -(G - 1), G - 2), (G, -(G - 1), G - 1, -(G - 2)),
+     (G, 1, G, 1), (-G, 1, G, -1), (G, -1, -G, 1), (G, -1, G, 1), (-G, -G, G, G), (1, G, 1, -G), (0, -G, 0, G),
+     (G, G, -G, -G), (-G, -1, G, 1), (G - 1, G, G - 2, G - 1), (1, G, 1, G - 1), (-1, G, -1, G - 1)])
+add([near(G) for _ in range(12_000)])
+add([near(G) for _ in range(12_000)])
+add([(random.randint(-G, G), nz(-G, G), random.randint(-G, G), nz(-G, G)) for _ in range(12_000)])
+add([(random.randint(-G, G), nz(-10, 10), random.randint(-G, G), nz(-10, 10)) for _ in range(12_000)])
 
 os.makedirs("tests", exist_ok=True)
 for i, t in enumerate(tests, 1):
