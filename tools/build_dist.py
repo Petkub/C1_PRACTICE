@@ -13,6 +13,7 @@ Layout produced:
   C1_Practice/Topic_K/Topic_K.pdf                  from student/Topic_K/
   C1_Practice/Topic_K/Makefile, judge.bat         from student/set_files/
   C1_Practice/Topic_K/1.cpp ... 20.cpp            empty template (student/set_files/template.cpp)
+The zip holds the contents of C1_Practice/ without the folder itself (see make_zip).
 The manifest is rebuilt first, so the zip and manifest.json always agree.
 """
 import os
@@ -65,8 +66,9 @@ def copy_package_files(root):
 
 
 def make_zip(root):
+    """No top-level folder in the zip: Windows "Extract All" already makes C1_Practice/, and a top-level folder gave
+    C1_Practice/C1_Practice/, where VS Code opened on the outer folder finds no .vscode/tasks.json (no Ctrl+Shift+B)."""
     path = root + ".zip"
-    out = os.path.dirname(root)
     with zipfile.ZipFile(path, "w", zipfile.ZIP_DEFLATED) as z:
         for dirpath, dirnames, filenames in os.walk(root):
             dirnames.sort()
@@ -74,7 +76,7 @@ def make_zip(root):
                 if name == MARKER:
                     continue
                 full = os.path.join(dirpath, name)
-                z.write(full, os.path.relpath(full, out).replace(os.sep, "/"))
+                z.write(full, os.path.relpath(full, root).replace(os.sep, "/"))
     return path
 
 

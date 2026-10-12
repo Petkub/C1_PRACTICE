@@ -802,7 +802,7 @@
 ]
 },
 "files": {
-"CHANGELOG.txt": "789ea453f8e7321dbf18bec238fe8a52c578d0fac2f052f4dc28070832d7e7a5",
+"CHANGELOG.txt": "f8fadef68a873169ec625019520a8b82fd35f2b4202cfb77e9ed9477aaecaf9a",
 "README.txt": "452d59eacccd80d580e6a7e44bca31c1353c6cca3aafe55e7a46e717bbd78bfb",
 "include/bits/stdc++.h": "1545f1f4b55b3acb866effca73203f3a9131773f147331cbf4e983ebf36d6cc9",
 "judge.cmd": "84038f11038804a85edc6df3e3c64f10a72891fad6b98ac7a7ae08e358ed7f44",
@@ -7671,7 +7671,7 @@
 "student/.vscode/tasks.json"
 ],
 "README.txt": [
-"494c066105041b02ee2684da8e274804f23ed0e1bc1b6b4efec88f518118719d",
+"5977e633c6c1d90d0d956c6f2d5f18b591c7d458e6f1fe6594ba2e313fcf1cc4",
 "student/README.txt"
 ],
 "Topic_1/Makefile": [
@@ -7799,5 +7799,5 @@
 "": "core/",
 "problems/": "problems/"
 },
-"version": "2.0"
+"version": "2.1"
 }
