@@ -1,7 +1,7 @@
 # C1_PRACTICE: POSN Camp 1 Topic Practice Judge
 
 A terminal judge that students run on their own machines to practice for the POSN Computer Olympiad Camp 1,
-organised by topic: 10 topics x 20 problems (easy to hard), folders `Topic_K`. In the judge, the data files and
+organised by topic: 13 topics x 20 problems (easy to hard), folders `Topic_K`. In the judge, the data files and
 options keep the C1_MOCK names (`sets.json`, `--set K`): a "set" here is a topic.
 Sibling repos `C1_MOCK` (Camp 1 mock exams) and `C2_MOCK` (Camp 2) share the same judge; fix shared bugs in all three.
 

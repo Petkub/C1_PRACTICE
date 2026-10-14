@@ -1,7 +1,7 @@
 # C1_PRACTICE — POSN Camp 1 Topic Practice (teacher's guide)
 
 This repo is the source of the judge and test data that students run on their own computers for Camp 1
-topic practice (10 topics × 20 problems, easy to hard, folders `Topic_1` ... `Topic_10`). Students never clone it: they download `C1_Practice.zip` once from
+topic practice (13 topics × 20 problems, easy to hard, folders `Topic_1` ... `Topic_13`). Students never clone it: they download `C1_Practice.zip` once from
 [Releases](https://github.com/Petkub/C1_PRACTICE/releases/latest), and from then on their judge **updates itself from
 this repo** every time you push to `main`.
 

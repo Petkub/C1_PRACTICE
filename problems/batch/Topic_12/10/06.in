@@ -1,0 +1,11 @@
+10
+cd .
+pwd
+cd ..
+pwd
+cd /
+pwd
+cd /..
+pwd
+cd ./.././..
+pwd

@@ -1,0 +1,12 @@
+11
+ADD b 1
+ADD a 1
+ADD ab 1
+ADD aa 1
+ADD ba 1
+ADD a 1
+TOP 6
+ADD b 1
+TOP 2
+ADD aaa 2
+TOP 3
