@@ -1,0 +1,6 @@
+5
+BORROW dam K1
+BORROW dam K2
+RETURN K1
+COUNT dam
+WHO K1

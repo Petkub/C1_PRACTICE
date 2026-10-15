@@ -1,5 +1,9 @@
 POSN Practice Judge - changes
 
+3.0  Three new topics, 20 problems each (the new Camp 1 syllabus includes the STL):
+     Topic 11 sorting, Topic 12 stack and queue, Topic 13 map and set.
+     The folders Topic_11 ... Topic_13 with their PDFs and empty 1.cpp ... 20.cpp are added for you.
+     Updates are much faster: files download in parallel, and a new topic comes as one zip per problem.
 2.2  Memory peak of a very fast program no longer shows the judge's own size (about 20 MB).
 2.1  README: in VS Code open the C1_Practice folder that holds Judge (an unzipped copy can be C1_Practice inside C1_Practice).
 2.0  20 problems per topic (was 8), still easy to hard: 1-7 easy, 8-16 medium, 17-20 hard.

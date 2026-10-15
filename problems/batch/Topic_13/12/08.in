@@ -1,0 +1,41 @@
+40
+ADD baa 1
+ADD b 3
+ADD a 1
+ADD ab 2
+ADD aab 1
+ADD b 1
+ADD aa 2
+ADD a 2
+ADD b 3
+TOP 6
+ADD baa 1
+TOP 4
+TOP 6
+TOP 8
+ADD aab 3
+TOP 6
+TOP 5
+ADD a 1
+ADD baa 1
+ADD a 1
+ADD ab 2
+ADD aa 2
+TOP 1
+TOP 5
+ADD aa 2
+ADD ab 1
+ADD baa 1
+ADD baa 2
+ADD aa 1
+ADD a 3
+ADD a 3
+ADD baa 1
+ADD a 1
+ADD b 2
+ADD aa 2
+ADD baa 1
+ADD aa 2
+ADD a 3
+ADD a 3
+TOP 100000

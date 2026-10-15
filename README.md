@@ -1,7 +1,7 @@
 # C1_PRACTICE — POSN Camp 1 Topic Practice (teacher's guide)
 
 This repo is the source of the judge and test data that students run on their own computers for Camp 1
-topic practice (10 topics × 20 problems, easy to hard, folders `Topic_1` ... `Topic_10`). Students never clone it: they download `C1_Practice.zip` once from
+topic practice (13 topics × 20 problems, easy to hard, folders `Topic_1` ... `Topic_13`). Students never clone it: they download `C1_Practice.zip` once from
 [Releases](https://github.com/Petkub/C1_PRACTICE/releases/latest), and from then on their judge **updates itself from
 this repo** every time you push to `main`.
 
@@ -30,6 +30,7 @@ tools/build_manifest.py   writes manifest.json (hashes of everything students ge
 tools/build_dist.py       builds dist/C1_Practice.zip for new students
 VERSION                   the version students see ("Judge v1.0")
 manifest.json             generated, served to students by GitHub; never edit by hand
+bundles/                  generated zips of each problem folder (fast updates); commit them with manifest.json
 ```
 
 What a student has: `C1_Practice/Judge/` (= `core/` + `problems/` + `manifest.json`) and `C1_Practice/Topic_K/1.cpp ... 20.cpp`

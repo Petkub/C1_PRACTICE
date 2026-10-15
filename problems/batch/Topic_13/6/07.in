@@ -1,0 +1,10 @@
+9
+BORROW aaaaaaaaaaaaaaaaaaaa ABCDEFGHIJ
+BORROW bbbbbbbbbbbbbbbbbbbb ABCDEFGHIJ
+COUNT aaaaaaaaaaaaaaaaaaaa
+COUNT bbbbbbbbbbbbbbbbbbbb
+RETURN ABCDEFGHIJ
+RETURN ABCDEFGHIJ
+COUNT aaaaaaaaaaaaaaaaaaaa
+BORROW bbbbbbbbbbbbbbbbbbbb ABCDEFGHIJ
+WHO ABCDEFGHIJ
