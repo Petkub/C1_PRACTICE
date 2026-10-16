@@ -8755,7 +8755,7 @@
 ]
 },
 "files": {
-"CHANGELOG.txt": "927335914a6affdadc2eb758043dc570feb5a388f11f0ede9d9d36a4ddbcb1df",
+"CHANGELOG.txt": "3deb70878b16fa78779c42f434fafaa73b92fde0a4d5a883d194d54a7bb101b7",
 "README.txt": "8d29cdd87eb2aa0e4608fbc4092f98c20d33519eb11c67f25345bd9dafd6a5d3",
 "include/bits/stdc++.h": "1545f1f4b55b3acb866effca73203f3a9131773f147331cbf4e983ebf36d6cc9",
 "judge.cmd": "84038f11038804a85edc6df3e3c64f10a72891fad6b98ac7a7ae08e358ed7f44",
@@ -17484,7 +17484,7 @@
 "student/set_files/Makefile"
 ],
 "Topic_1/Topic_1.pdf": [
-"2daaec8aafca685b6a4cd32dc1e244c55157a93edde3fbf74520e30247619b5b",
+"118617a4093b3248aabb2fec2d7f8157e9f2b8ee2aacb528a8be249b175137c7",
 "student/Topic_1/Topic_1.pdf"
 ],
 "Topic_1/judge.bat": [
@@ -17496,7 +17496,7 @@
 "student/set_files/Makefile"
 ],
 "Topic_10/Topic_10.pdf": [
-"d4f6212834ed623b1d714d84f8dca0a8389efd8153e5b935f2a3c225dab0aeca",
+"fe9c03b94c0a69c9eec591eda57c229ca1c129426e059d08ba1219b58466fcd5",
 "student/Topic_10/Topic_10.pdf"
 ],
 "Topic_10/judge.bat": [
@@ -17508,7 +17508,7 @@
 "student/set_files/Makefile"
 ],
 "Topic_11/Topic_11.pdf": [
-"cdc1f8b9a0350204a38a41d0d1c9794e9464d7b61180869ac88d74c88daaee7e",
+"e723af82107a65a45313284c5b9da0a8689f88210362ca242da5ce44b36c0f4e",
 "student/Topic_11/Topic_11.pdf"
 ],
 "Topic_11/judge.bat": [
@@ -17520,7 +17520,7 @@
 "student/set_files/Makefile"
 ],
 "Topic_12/Topic_12.pdf": [
-"8e987362b31bc3bfa2f5926e981243df5b8afa8ed4eeebd51abc8e92c1b04208",
+"9665fb34c00101351405eed4c2fb3c19acb1cf8d1be6306a2d0e8103b494f001",
 "student/Topic_12/Topic_12.pdf"
 ],
 "Topic_12/judge.bat": [
@@ -17532,7 +17532,7 @@
 "student/set_files/Makefile"
 ],
 "Topic_13/Topic_13.pdf": [
-"5a84c8fff24da1b64afbd8c6b898ceb58505d4e29fbd45af00d7a36e4c69d30b",
+"07164f9fde70da5ca2ee59532361faaa22e3db614f59a49fa926d0523dff4332",
 "student/Topic_13/Topic_13.pdf"
 ],
 "Topic_13/judge.bat": [
@@ -17544,7 +17544,7 @@
 "student/set_files/Makefile"
 ],
 "Topic_2/Topic_2.pdf": [
-"fdef130482ee913521ff95e62188929d1a43d36635f672b86c456d449e29510a",
+"94777d6a25b37ac384f4faf0debd03756347e723b056b49308627846ed75cb03",
 "student/Topic_2/Topic_2.pdf"
 ],
 "Topic_2/judge.bat": [
@@ -17556,7 +17556,7 @@
 "student/set_files/Makefile"
 ],
 "Topic_3/Topic_3.pdf": [
-"9f2b4bb01c051930fb15f1e5e184780a31083ba74b3252ed224cd24dbfb6ae21",
+"d16d05c1110d5d029da5d4c116ccce4cf3ad4ac58efcda90d84bd2e13974dc3e",
 "student/Topic_3/Topic_3.pdf"
 ],
 "Topic_3/judge.bat": [
@@ -17568,7 +17568,7 @@
 "student/set_files/Makefile"
 ],
 "Topic_4/Topic_4.pdf": [
-"e907d55dd6e7895d8a658a93e9812c83378b068f74a7175f2381e572491ba4b0",
+"f5d0c3e3bd5690d0c42b7bd22fe185090e5fa83cb7a00c824a887a4949c24d2b",
 "student/Topic_4/Topic_4.pdf"
 ],
 "Topic_4/judge.bat": [
@@ -17580,7 +17580,7 @@
 "student/set_files/Makefile"
 ],
 "Topic_5/Topic_5.pdf": [
-"770dfb8f5fb8d90fcbe14fae493bdc0c4f9ed8f83cb580557b9874069cb90d6f",
+"c7b849812e01bf81bd057e6f0b11c29e4eca5293c1ef7a44aa9149e0ca029332",
 "student/Topic_5/Topic_5.pdf"
 ],
 "Topic_5/judge.bat": [
@@ -17592,7 +17592,7 @@
 "student/set_files/Makefile"
 ],
 "Topic_6/Topic_6.pdf": [
-"12787ef4c079a2e785892cf70041e71abe0b125c34448c3d1842faf1111000a1",
+"bd462de6b519afbf6cfe0996018d36e2f7b134965f4174b1fb9265780f42d70b",
 "student/Topic_6/Topic_6.pdf"
 ],
 "Topic_6/judge.bat": [
@@ -17604,7 +17604,7 @@
 "student/set_files/Makefile"
 ],
 "Topic_7/Topic_7.pdf": [
-"9bbfa3513e8c37cc65a0dcb409050ea4ba703210f7f3aeb59e7db793ab957b91",
+"26a213ca241f0be770b65587f44a460f97ce2b6475e444fdaa61828d36d5b6e3",
 "student/Topic_7/Topic_7.pdf"
 ],
 "Topic_7/judge.bat": [
@@ -17616,7 +17616,7 @@
 "student/set_files/Makefile"
 ],
 "Topic_8/Topic_8.pdf": [
-"ef7725f06fabf3ad4123331edce82141146438b3ad5ca4144be365db7da30dbf",
+"9d6e55660f4e4bbc5c608e33d0bd916ba72d7c714dbeda54c9ac843cb1af4401",
 "student/Topic_8/Topic_8.pdf"
 ],
 "Topic_8/judge.bat": [
@@ -17628,7 +17628,7 @@
 "student/set_files/Makefile"
 ],
 "Topic_9/Topic_9.pdf": [
-"ba8fce501b9dec694ddb75f9d0bde66a6457ffd560e993405f0087735a179ec8",
+"46a2cc55e87cf3b91492573fad12bbfaa59b2a18ffdf3f4481c35ac0e1424724",
 "student/Topic_9/Topic_9.pdf"
 ],
 "Topic_9/judge.bat": [
@@ -17640,7 +17640,7 @@
 "": "core/",
 "problems/": "problems/"
 },
-"version": "3.1"
+"version": "3.2"
 },
 "managed": {
 ".vscode/settings.json": [
@@ -17655,10 +17655,6 @@
 "efde017e79f3cc9f095e4599a3c8afd6c2be5502f71d3b8bf03c12f4dde85da5",
 "student/set_files/Makefile"
 ],
-"Topic_1/Topic_1.pdf": [
-"2daaec8aafca685b6a4cd32dc1e244c55157a93edde3fbf74520e30247619b5b",
-"student/Topic_1/Topic_1.pdf"
-],
 "Topic_1/judge.bat": [
 "70bc4bbdfc1d053accd43a71287642a0d5f5a9d48cf33450c6d240f691fa05d0",
 "student/set_files/judge.bat"
@@ -17666,10 +17662,6 @@
 "Topic_10/Makefile": [
 "efde017e79f3cc9f095e4599a3c8afd6c2be5502f71d3b8bf03c12f4dde85da5",
 "student/set_files/Makefile"
-],
-"Topic_10/Topic_10.pdf": [
-"d4f6212834ed623b1d714d84f8dca0a8389efd8153e5b935f2a3c225dab0aeca",
-"student/Topic_10/Topic_10.pdf"
 ],
 "Topic_10/judge.bat": [
 "70bc4bbdfc1d053accd43a71287642a0d5f5a9d48cf33450c6d240f691fa05d0",
@@ -17679,10 +17671,6 @@
 "efde017e79f3cc9f095e4599a3c8afd6c2be5502f71d3b8bf03c12f4dde85da5",
 "student/set_files/Makefile"
 ],
-"Topic_2/Topic_2.pdf": [
-"fdef130482ee913521ff95e62188929d1a43d36635f672b86c456d449e29510a",
-"student/Topic_2/Topic_2.pdf"
-],
 "Topic_2/judge.bat": [
 "70bc4bbdfc1d053accd43a71287642a0d5f5a9d48cf33450c6d240f691fa05d0",
 "student/set_files/judge.bat"
@@ -17690,10 +17678,6 @@
 "Topic_3/Makefile": [
 "efde017e79f3cc9f095e4599a3c8afd6c2be5502f71d3b8bf03c12f4dde85da5",
 "student/set_files/Makefile"
-],
-"Topic_3/Topic_3.pdf": [
-"9f2b4bb01c051930fb15f1e5e184780a31083ba74b3252ed224cd24dbfb6ae21",
-"student/Topic_3/Topic_3.pdf"
 ],
 "Topic_3/judge.bat": [
 "70bc4bbdfc1d053accd43a71287642a0d5f5a9d48cf33450c6d240f691fa05d0",
@@ -17703,10 +17687,6 @@
 "efde017e79f3cc9f095e4599a3c8afd6c2be5502f71d3b8bf03c12f4dde85da5",
 "student/set_files/Makefile"
 ],
-"Topic_4/Topic_4.pdf": [
-"e907d55dd6e7895d8a658a93e9812c83378b068f74a7175f2381e572491ba4b0",
-"student/Topic_4/Topic_4.pdf"
-],
 "Topic_4/judge.bat": [
 "70bc4bbdfc1d053accd43a71287642a0d5f5a9d48cf33450c6d240f691fa05d0",
 "student/set_files/judge.bat"
@@ -17714,10 +17694,6 @@
 "Topic_5/Makefile": [
 "efde017e79f3cc9f095e4599a3c8afd6c2be5502f71d3b8bf03c12f4dde85da5",
 "student/set_files/Makefile"
-],
-"Topic_5/Topic_5.pdf": [
-"770dfb8f5fb8d90fcbe14fae493bdc0c4f9ed8f83cb580557b9874069cb90d6f",
-"student/Topic_5/Topic_5.pdf"
 ],
 "Topic_5/judge.bat": [
 "70bc4bbdfc1d053accd43a71287642a0d5f5a9d48cf33450c6d240f691fa05d0",
@@ -17727,10 +17703,6 @@
 "efde017e79f3cc9f095e4599a3c8afd6c2be5502f71d3b8bf03c12f4dde85da5",
 "student/set_files/Makefile"
 ],
-"Topic_6/Topic_6.pdf": [
-"12787ef4c079a2e785892cf70041e71abe0b125c34448c3d1842faf1111000a1",
-"student/Topic_6/Topic_6.pdf"
-],
 "Topic_6/judge.bat": [
 "70bc4bbdfc1d053accd43a71287642a0d5f5a9d48cf33450c6d240f691fa05d0",
 "student/set_files/judge.bat"
@@ -17738,10 +17710,6 @@
 "Topic_7/Makefile": [
 "efde017e79f3cc9f095e4599a3c8afd6c2be5502f71d3b8bf03c12f4dde85da5",
 "student/set_files/Makefile"
-],
-"Topic_7/Topic_7.pdf": [
-"9bbfa3513e8c37cc65a0dcb409050ea4ba703210f7f3aeb59e7db793ab957b91",
-"student/Topic_7/Topic_7.pdf"
 ],
 "Topic_7/judge.bat": [
 "70bc4bbdfc1d053accd43a71287642a0d5f5a9d48cf33450c6d240f691fa05d0",
@@ -17751,10 +17719,6 @@
 "efde017e79f3cc9f095e4599a3c8afd6c2be5502f71d3b8bf03c12f4dde85da5",
 "student/set_files/Makefile"
 ],
-"Topic_8/Topic_8.pdf": [
-"ef7725f06fabf3ad4123331edce82141146438b3ad5ca4144be365db7da30dbf",
-"student/Topic_8/Topic_8.pdf"
-],
 "Topic_8/judge.bat": [
 "70bc4bbdfc1d053accd43a71287642a0d5f5a9d48cf33450c6d240f691fa05d0",
 "student/set_files/judge.bat"
@@ -17762,10 +17726,6 @@
 "Topic_9/Makefile": [
 "efde017e79f3cc9f095e4599a3c8afd6c2be5502f71d3b8bf03c12f4dde85da5",
 "student/set_files/Makefile"
-],
-"Topic_9/Topic_9.pdf": [
-"ba8fce501b9dec694ddb75f9d0bde66a6457ffd560e993405f0087735a179ec8",
-"student/Topic_9/Topic_9.pdf"
 ],
 "Topic_9/judge.bat": [
 "70bc4bbdfc1d053accd43a71287642a0d5f5a9d48cf33450c6d240f691fa05d0",

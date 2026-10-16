@@ -1,5 +1,7 @@
 POSN Practice Judge - changes
 
+3.2  Topic PDFs: the cover of Topics 12 and 13 fits on one page again, and sample boxes with long lines are
+     printed full width so a line is never wrapped into what looks like two input lines.
 3.1  Memory limit on macOS: a program over the limit could sometimes pass; now it always gets MLE.
 3.0  Three new topics, 20 problems each (the new Camp 1 syllabus includes the STL):
      Topic 11 sorting, Topic 12 stack and queue, Topic 13 map and set.
